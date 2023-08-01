@@ -1,0 +1,16 @@
+#productos{
+    max-width: 1440px;
+    padding: 4rem 10.55%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #productos{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #productos{
+        padding: 1rem;
+    }
+}

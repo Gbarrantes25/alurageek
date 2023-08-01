@@ -1,0 +1,11 @@
+.cabecera__logo{
+    display: flex;
+    align-items: center;
+    width: 176px;
+}
+
+@media (min-width: 0) and (max-width: 991px) {
+    .cabecera__logo{
+        width: 100px;
+    }
+}

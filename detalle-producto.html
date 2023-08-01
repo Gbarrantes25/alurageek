@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/all/logo-alurageek.png"/>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-logo.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-icono.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-texto.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-input.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-icono.css">
+
+
+    <link rel="stylesheet" href="assets/css/detalle-producto/detalle/detalle.css">
+    <link rel="stylesheet" href="assets/css/detalle-producto/detalle/detalle-img.css">
+    <link rel="stylesheet" href="assets/css/detalle-producto/detalle/detalle-contenido.css">
+
+    <link rel="stylesheet" href="assets/css/detalle-producto/productos-similares/similares.css">
+    <link rel="stylesheet" href="assets/css/detalle-producto/productos-similares/similares-titulo.css">
+    <link rel="stylesheet" href="assets/css/detalle-producto/productos-similares/similares-container.css">
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-logo.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-enlaces.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-formulario.css">
+    <link rel="stylesheet" href="assets/css/all/footer/footer.css">
+
+    <title>::AluraGeek:: Detalle producto</title>
+</head>
+<body>
+    <header id="cabecera">
+        <a href="index.html"><div class="cabecera__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono AluraGeek" class="cabecera__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo AluraGeek" class="cabecera__texto">
+        </div></a>
+    </header>
+    
+    <section id="detalle">
+        <img src="" class="detalle__img">
+        <div class="detalle__contenido">
+            <h2 class="detalle__titulo"></h2>
+            <h6 class="detalle__precio"></h6>
+            <p class="detalle__descripcion"></p>
+        </div>
+    </section>
+    <section id="similares">
+        <h2 class="similares__titulo">Productos similares</h2>
+        <div class="similares__container">
+        </div>
+    </section>
+    
+
+    <section id="rodapie">
+        <div class="rodapie__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono" class="rodapie__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo Alura Geek" class="rodapie__texto">
+        </div>
+        <div class="rodapie__enlaces">
+            <a href="encontruccion.html" class="rodapie__enlace">Quiénes somos</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Política de privacidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Programa de fidelidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Nuestras Tiendas</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Quiero ser franciciado</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Anuncie aquí</a>
+        </div>
+        <form action="" class="rodapie__formulario" method="post">
+            <legend class="rodapie__formulario-titulo">Hable con nosotros</legend>
+            <input type="text" class="rodapie__formulario-nombre" placeholder="Nombre" required pattern="[a-zA-Z][a-zA-Z0-9]{1,20}">
+            <p class="rodapie__error rodapie__error--nombre"></p>
+            <textarea type="text" name="" id="" cols="30" rows="10" class="rodapie__formulario-mensaje" placeholder="Escribe tu mensaje" required pattern="[a-zA-Z][a-zA-Z0-9]{9,500}"></textarea>
+            <p class="rodapie__error rodapie__error--mensaje"></p>
+            <button class="rodapie__formulario-btn">Enviar mensaje</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <p class="footer__texto">© Desarrolado por Gian Barrantes</p>
+        <p class="footer__texto">2023</p>
+    </footer>
+    <template class="template-similares">
+        <div class="similares__articulo">
+            <img src="" class="similares__img">
+            <h6 class="similares__nombre"></h6>
+            <p class="similares__precio"></p>
+            <a class="similares__ver" href="">Ver producto</a>
+        </div>
+    </template>
+    <script src="assets/modulos/validacion-rodapie.js"></script>
+    <script type="module" src="assets/modulos/detalle-producto.js"></script>
+</body>
+</html>

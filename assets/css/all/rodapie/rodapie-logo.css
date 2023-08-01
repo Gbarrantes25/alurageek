@@ -1,0 +1,21 @@
+.rodapie__logo{
+    display: flex;
+    width: 176px;
+    height: 50px;
+    align-items: center;
+}
+
+.rodapie__icono{
+    width: 50px;
+
+}
+
+.rodapie__texto{
+    width: 126px;
+}
+
+@media screen and (max-width: 767px) {
+    .rodapie__logo{
+        padding-bottom: 1rem;
+    }
+}

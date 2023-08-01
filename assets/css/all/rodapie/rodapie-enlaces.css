@@ -1,0 +1,27 @@
+.rodapie__enlaces{
+    display: flex;
+    flex-direction: column;
+    max-height: 234px;
+    justify-content: space-between;
+}
+
+.rodapie__enlace{
+    font-size: 0.8rem;
+    color: var(--color-texto);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .rodapie__enlaces{
+        gap: 1rem;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .rodapie__enlace{
+        font-size: 1rem;;
+    }
+
+}

@@ -1,0 +1,13 @@
+.productos__titulo{
+    color: var(--color-texto);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (min-width: 0) and (max-width: 991px) {
+    .productos__titulo{
+        font-size: 1.375rem;
+    }
+}

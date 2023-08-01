@@ -1,0 +1,35 @@
+.productos__ver{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.productos__texto{
+    color: var(--color-azul);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.productos__enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+}
+
+.productos__flecha{
+    width: 1rem;
+}
+
+
+@media screen and (max-width: 767px) {
+    .productos__ver{
+        gap: 0.25rem;
+    }
+
+    .productos__texto{
+        font-size: 0.875rem;
+    }
+}

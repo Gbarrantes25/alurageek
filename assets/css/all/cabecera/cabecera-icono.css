@@ -1,0 +1,9 @@
+.cabecera__icono{
+    width: 50px;
+}
+
+@media (min-width: 0) and (max-width: 991px) {
+    .cabecera__icono{
+        width: 28.4px;;
+    }
+}

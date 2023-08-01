@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/all/logo-alurageek.png"/>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-logo.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-icono.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-texto.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-input.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-icono.css">
+    <!--Login-->
+    <link rel="stylesheet" href="assets/css/login/sesion/formulario.css">
+    <link rel="stylesheet" href="assets/css/login/sesion/formulario-container.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-logo.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-enlaces.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-formulario.css">
+    <link rel="stylesheet" href="assets/css/all/footer/footer.css">
+
+
+
+
+
+    <title>AluraGeek :: Login</title>
+</head>
+<body>
+    <header id="cabecera">
+        <a href="index.html"><div class="cabecera__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono AluraGeek" class="cabecera__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo AluraGeek" class="cabecera__texto">
+        </div></a>
+    
+    </header>
+    <section id="formulario">
+        <form class="formulario__container" action="">
+            <legend class="formulario__titulo">Iniciar Sesión</legend>
+            <input type="email" class="formulario__input formulario__input--email"  placeholder="Escriba su correo electrónico" data-email pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+            <p class="formulario__error formulario__error--email"></p>
+            <input type="password" class="formulario__input formulario__input--password"  placeholder="Escriba su contraseña" data-password pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$">
+            <p class="formulario__error formulario__error--password"></p>
+            <button class="formulario__btn-entrar">Entrar</button>
+            <p class="formulario__error formulario__error--formulario"></p>
+        </form>
+    </section>
+    <section id="rodapie">
+        <div class="rodapie__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono" class="rodapie__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo Alura Geek" class="rodapie__texto">
+        </div>
+        <div class="rodapie__enlaces">
+            <a href="encontruccion.html" class="rodapie__enlace">Quiénes somos</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Política de privacidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Programa de fidelidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Nuestras Tiendas</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Quiero ser franciciado</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Anuncie aquí</a>
+        </div>
+        <form action="" class="rodapie__formulario">
+            <legend class="rodapie__formulario-titulo">Hable con nosotros</legend>
+            <input type="text" class="rodapie__formulario-nombre" placeholder="Nombre">
+            <textarea name="" id="" cols="30" rows="10" class="rodapie__formulario-mensaje" placeholder="Escribe tu mensaje"></textarea>
+            <button class="rodapie__formulario-btn">Enviar mensaje</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <p class="footer__texto">© Desarrolado por Gian Barrantes</p>
+        <p class="footer__texto">2023</p>
+    </footer>
+    <script src="assets/modulos/validacion-login.js"></script>
+    <script src="assets/modulos/validacion-rodapie.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+.similares__container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.similares__articulo{
+    width: 14.96%;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.similares__img{
+    width: 100%;
+    height: 174px;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.similares__img--1{
+    background-image: url("/assets/img/all/1-starwars1.svg");
+}
+
+.similares__img--2{
+    background-image: url("/assets/img/all/11-consola5.svg");
+}
+
+.similares__img--3{
+    background-image: url("/assets/img/all/17-diversos5.svg");
+}
+
+.similares__img--4{
+    background-image: url("/assets/img/all/4-starwars4.svg");
+}
+
+.similares__img--5{
+    background-image: url("/assets/img/all/15-diversos3.svg");
+}
+
+.similares__img--6{
+    background-image: url("/assets/img/all/12-consola6.svg");
+}
+
+
+.similares__img:hover{
+    transform: scale(1.1);
+}
+
+.similares__nombre{
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.similares__precio{
+    color: var(--color-texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.similares__ver{
+    color: var(--color-azul);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .similares__container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .similares__articulo{
+        width: 25%;
+    }
+
+    .similares__articulo--5{
+       display: none;
+    }
+
+    .similares__articulo--6{
+        display: none;
+     }
+}
+
+@media screen and (max-width: 767px) {
+    .similares__container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .similares__articulo{
+        width: 47.2%;
+        height: 240px;
+    }
+
+    .similares__articulo--5{
+       display: none;
+    }
+
+    .similares__articulo--6{
+        display: none;
+     }
+
+     .similares__ver{
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

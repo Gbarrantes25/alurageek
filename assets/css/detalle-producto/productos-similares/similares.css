@@ -1,0 +1,22 @@
+#similares{
+    max-width: 1440px;
+    display: flex;
+    padding: 0 10.55% 4rem 10.55%;
+    gap: 1rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: var(--color-buscador);
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #similares{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #similares{
+        padding: 1rem;
+    }
+}

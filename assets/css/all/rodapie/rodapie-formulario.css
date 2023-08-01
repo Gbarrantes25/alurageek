@@ -1,0 +1,109 @@
+.rodapie__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.8rem;
+    max-height: 234px;
+}
+
+.rodapie__formulario-titulo{
+    color: var(--color-texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.rodapie__formulario-nombre{
+    max-height: 1.25rem;
+    padding: 0.75rem;
+    min-width: 300px;
+    max-width: 31.25rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.rodapie__formulario-mensaje{
+    max-height: 5.125rem;
+    padding: 0.75rem;
+    width: auto;
+    min-width: 300px;
+    max-width: 31.25rem;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.rodapie__formulario-btn{
+    width: 9rem;
+    max-height: 3.1875rem;
+    border: none;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    padding: 1rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rodapie__formulario-btn:active{
+    background-color: rgba(75, 123, 255, 0.8);
+}
+
+.rodapie__error{
+    font-size: 0.8rem;
+    color: red;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .rodapie__formulario-btn{
+        width: 8.4rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0.875rem 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rodapie__formulario{
+        box-sizing: border-box;
+        align-self: flex-start;
+        gap: 0.5rem;
+        max-height: none;
+        width: 100%;
+    }
+
+    .rodapie__formulario-nombre{
+        max-height: 1.25rem;
+        padding: 0.75rem;
+        min-width: 220px;
+        max-width: 43.75rem;
+
+    }
+    
+    .rodapie__formulario-mensaje{
+        max-height: 5.125rem;
+        padding: 0.75rem;
+        min-width: 220px;
+        max-width: 43.75rem;
+    }
+
+    .rodapie__formulario-btn{
+        width: 8.3125rem;
+        max-height: 2.5rem;
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+}

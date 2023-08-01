@@ -1,0 +1,204 @@
+.productos__articulo{
+    display: flex;
+    flex-direction: column;
+    width: 15.49%;
+    min-height: 220px;
+    max-height: 252px;
+    justify-content: space-between;
+}
+
+.productos__articulo--todos{
+    display: flex;
+    flex-direction: column;
+    width: 15.334%;
+    min-height: 220px;
+    max-height: 252px;
+    justify-content: space-between;
+}
+
+.productos__articulo-hidden{
+    display: none;
+}
+
+.productos__articulo-mensaje{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    color: red;
+}
+
+.productos__articulo-img{
+    width: 100%;
+    min-height: 140px;
+    max-height: 174px;
+    height: 174px;
+    object-fit: cover;
+    object-position:center;
+    transition: 1s;
+}
+
+.productos__articulo-img:hover{
+   transform: scale(1.03);
+}
+
+.productos__articulo-img--star1{
+    background-image: url("/assets/img/all/1-starwars1.svg");
+}
+.productos__articulo-img--star2{
+    background-image: url("/assets/img/all/2-starwars2.svg");
+}
+.productos__articulo-img--star3{
+    background-image: url("/assets/img/all/3-starwars3.svg");
+}
+.productos__articulo-img--star4{
+    background-image: url("/assets/img/all/4-starwars4.svg");
+}
+.productos__articulo-img--star5{
+    background-image: url("/assets/img/all/5-starwars5.svg");
+}
+.productos__articulo-img--star6{
+    background-image: url("/assets/img/all/6-starwars6.svg");
+}
+
+
+.productos__articulo-img--consola1{
+    background-image: url("/assets/img/all/7-consola1.svg");
+}
+.productos__articulo-img--consola2{
+    background-image: url("/assets/img/all/8-consola2.svg");
+}
+.productos__articulo-img--consola3{
+    background-image: url("/assets/img/all/9-consola3.svg");
+}
+.productos__articulo-img--consola4{
+    background-image: url("/assets/img/all/10-consola4.svg");
+}
+.productos__articulo-img--consola5{
+    background-image: url("/assets/img/all/11-consola5.svg");
+}
+.productos__articulo-img--consola6{
+    background-image: url("/assets/img/all/12-consola6.svg");
+}
+
+
+.productos__articulo-img--diversos1{
+    background-image: url("/assets/img/all/13-diversos1.svg");
+}
+.productos__articulo-img--diversos2{
+    background-image: url("/assets/img/all/14-diversos2.svg");
+}
+.productos__articulo-img--diversos3{
+    background-image: url("/assets/img/all/15-diversos3.svg");
+}
+.productos__articulo-img--diversos4{
+    background-image: url("/assets/img/all/16-diversos4.svg");
+}
+.productos__articulo-img--diversos5{
+    background-image: url("/assets/img/all/17-diversos5.svg");
+}
+.productos__articulo-img--diversos6{
+    background-image: url("/assets/img/all/18-diversos6.svg");
+}
+
+
+.productos__articulo-nombre{
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.productos__articulo-precio{
+    color: var(--color-texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.productos__articulo-ver{
+    color: var(--color-azul);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .productos__articulo{
+        width: 25%;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+    
+    .productos__articulo--todos{
+        width: 23.3%;
+    }
+
+    .productos__articulo-mensaje{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    
+    .productos__articulo--5{
+        display: none;
+    }
+
+    .productos__articulo--6{
+        display: none;
+    }
+
+    .productos__articulo-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .productos__articulo{
+        min-width: 47.1%;
+        height: auto;
+        display: flex;
+        gap: 0.5rem;
+        justify-content:flex-start;
+    }
+
+    .productos__articulo-mensaje{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    .productos__articulo--5{
+        display: none;
+    }
+
+    .productos__articulo--6{
+        display: none;
+    }
+
+    .productos__articulo-img{
+        width: 100%;
+        object-fit: cover;
+        object-fit:center;
+    }
+
+    .productos__articulo-ver{
+        font-size: 0.875rem;
+  
+    }
+
+}

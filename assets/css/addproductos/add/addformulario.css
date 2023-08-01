@@ -1,0 +1,22 @@
+#addformulario{
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: var(--color-buscador);
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    #addformulario{
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    #addformulario{
+        padding: 1rem;
+    }
+}

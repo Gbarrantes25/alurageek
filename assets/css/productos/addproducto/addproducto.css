@@ -1,0 +1,19 @@
+#addproducto{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 10.55%;
+    background-color: var(--color-buscador);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #addproducto{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #addproducto{
+        padding: 1rem;
+    }
+}

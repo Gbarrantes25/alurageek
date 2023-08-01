@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/all/logo-alurageek.png"/>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-logo.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-icono.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-texto.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-input.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-icono.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-login.css">
+
+    <link rel="stylesheet" href="assets/css/addproductos/add/addformulario.css">
+    <link rel="stylesheet" href="assets/css/addproductos/add/addformulario-container.css">
+
+
+
+
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-logo.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-enlaces.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-formulario.css">
+    <link rel="stylesheet" href="assets/css/all/footer/footer.css">
+
+    <title>::AluraGeek:: Editar productos</title>
+</head>
+<body>
+    <header id="cabecera">
+        <a href="index.html"><div class="cabecera__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono AluraGeek" class="cabecera__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo AluraGeek" class="cabecera__texto">
+        </div></a>
+        <a class="cabecera__login" href="productos.html">Administrar</a>
+    </header>
+    
+    <section id="addformulario">
+        <form class="addformulario__container" action="">
+            <legend class="addformulario__titulo">Editar producto</legend>
+            <input type="url" class="addformulario__input" placeholder="URL de imagen" data-url pattern="[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?" required name="urlimagen">
+            <span class="addformulario__error addformulario__error--url"></span>
+            <select name="categoria" class="addformulario__input" data-categoria required name="categoria">
+                <option value="" disabled selected>Selecione una categoría</option>
+                <option value="starwars">Star Wars</option>
+                <option value="consolas">Consolas</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            <span class="addformulario__error addformulario__error--categoria"></span>
+            <input type="text" class="addformulario__input" placeholder="Nombre de producto" data-nombre pattern="^.{2,20}$" maxlength="20" required name="nombre">
+            <span class="addformulario__error addformulario__error--producto"></span>
+            <input type="number" class="addformulario__input" placeholder="Precio del producto $" data-precio pattern="^([1-9]\d*(\.)\d*|0?(\.)\d*[1-9]\d*|[1-9]\d*)$" required name="precio" step="0.01">
+            <span class="addformulario__error addformulario__error--precio"></span>
+            <input type="number" class="addformulario__input" placeholder="Código de producto" data-codigo pattern="^([1-9]\d*(\.)\d*|0?(\.)\d*[1-9]\d*|[1-9]\d*)$" required name="codigo">
+            <span class="addformulario__error addformulario__error--codigo"></span>
+            <textarea name="descripcion" type="text" id="" cols="30" rows="10" class="addformulario__descripcion" placeholder="Descripción del producto" data-descripcion pattern="^.{9,140}$" required name="descripcion"></textarea>
+            <span class="addformulario__error addformulario__error--descripcion"></span>
+            <button class="addformulario__btn-agregar">Editar</button>
+            <span class="addformulario__respuesta"></span>
+        </form>
+    </section>
+
+    <section id="rodapie">
+        <div class="rodapie__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono" class="rodapie__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo Alura Geek" class="rodapie__texto">
+        </div>
+        <div class="rodapie__enlaces">
+            <a href="encontruccion.html" class="rodapie__enlace">Quiénes somos</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Política de privacidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Programa de fidelidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Nuestras Tiendas</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Quiero ser franciciado</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Anuncie aquí</a>
+        </div>
+        <form action="" class="rodapie__formulario" method="post">
+            <legend class="rodapie__formulario-titulo">Hable con nosotros</legend>
+            <input type="text" class="rodapie__formulario-nombre" placeholder="Nombre" required pattern="[a-zA-Z][a-zA-Z0-9]{1,20}">
+            <p class="rodapie__error rodapie__error--nombre"></p>
+            <textarea type="text" name="" id="" cols="30" rows="10" class="rodapie__formulario-mensaje" placeholder="Escribe tu mensaje" required pattern="[a-zA-Z][a-zA-Z0-9]{9,500}"></textarea>
+            <p class="rodapie__error rodapie__error--mensaje"></p>
+            <button class="rodapie__formulario-btn">Enviar mensaje</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <p class="footer__texto">© Desarrolado por Gian Barrantes</p>
+        <p class="footer__texto">2023</p>
+    </footer>
+    <script src="assets/modulos/validacion-rodapie.js"></script>
+    <script type="module" src="assets/modulos/editar.js"></script>
+
+</body>
+</html>

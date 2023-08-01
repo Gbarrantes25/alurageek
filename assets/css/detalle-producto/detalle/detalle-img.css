@@ -1,0 +1,22 @@
+.detalle__img{
+    width: 49%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .detalle__img{
+        width: 36%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .detalle__img{
+        width: 99.9%;
+        height: 50%;
+    }
+}

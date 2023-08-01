@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/all/logo-alurageek.png"/>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-logo.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-icono.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-texto.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-input.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-buscador-icono.css">
+    <link rel="stylesheet" href="assets/css/all/cabecera/cabecera-login.css">
+
+    <link rel="stylesheet" href="assets/css/productos/addproducto/addproducto.css">
+    <link rel="stylesheet" href="assets/css/productos/addproducto/addproducto-cabecera.css">
+    <link rel="stylesheet" href="assets/css/productos/addproducto/addproducto-container.css">
+    <link rel="stylesheet" href="assets/css/productos/addproducto/addproducto-articulo.css">
+
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-logo.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-enlaces.css">
+    <link rel="stylesheet" href="assets/css/all/rodapie/rodapie-formulario.css">
+    <link rel="stylesheet" href="assets/css/all/footer/footer.css">
+
+    <title>::AluraGeek:: Add productos</title>
+</head>
+<body>
+    <header id="cabecera">
+        <a href="index.html"><div class="cabecera__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono AluraGeek" class="cabecera__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo AluraGeek" class="cabecera__texto">
+        </div></a>
+        <div class="cabecera__buscador">
+            <input type="text" class="cabecera__buscador-input" placeholder="¿Qué deseas buscar?">
+            <img src="assets/img/all/icono-buscador.png" alt="Ícono buscador" class="cabecera__buscador-icono">
+        </div>
+    </header>
+    <section id="addproducto">
+        <div class="addproducto__cabecera">
+            <h2 class="addproducto__titulo">Todos los productos</h2>
+            <a href="addproductos.html" class="addproducto__btn-agregar">Agregar producto</a>
+        </div>
+
+        <div class="addproducto__container">
+        </div>
+        
+    </section>
+    
+    
+
+    <section id="rodapie">
+        <div class="rodapie__logo">
+            <img src="assets/img/all/logo-alurageek.png" alt="Ícono" class="rodapie__icono">
+            <img src="assets/img/all/texto-alurageek.png" alt="Logo Alura Geek" class="rodapie__texto">
+        </div>
+        <div class="rodapie__enlaces">
+            <a href="encontruccion.html" class="rodapie__enlace">Quiénes somos</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Política de privacidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Programa de fidelidad</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Nuestras Tiendas</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Quiero ser franciciado</a>
+            <a href="encontruccion.html" class="rodapie__enlace">Anuncie aquí</a>
+        </div>
+        <form action="" class="rodapie__formulario" method="post">
+            <legend class="rodapie__formulario-titulo">Hable con nosotros</legend>
+            <input type="text" class="rodapie__formulario-nombre" placeholder="Nombre" required pattern="[a-zA-Z][a-zA-Z0-9]{1,20}">
+            <p class="rodapie__error rodapie__error--nombre"></p>
+            <textarea type="text" name="" id="" cols="30" rows="10" class="rodapie__formulario-mensaje" placeholder="Escribe tu mensaje" required pattern="[a-zA-Z][a-zA-Z0-9]{9,500}"></textarea>
+            <p class="rodapie__error rodapie__error--mensaje"></p>
+            <button class="rodapie__formulario-btn">Enviar mensaje</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <p class="footer__texto">© Desarrolado por Gian Barrantes</p>
+        <p class="footer__texto">2023</p>
+    </footer>
+    <template id="template">
+        <div class="addproducto__articulo">
+            <img src="" class="addproducto__articulo-img">
+            <h6 class="addproducto__texto-nombre"></h6>
+            <h6 class="addproducto__texto-precio"></h6>
+            <h6 class="addproducto__texto-codigo"></h6>
+            <div class="addproducto__acciones">
+                <a href="" class="addproducto__acciones-enlace-editar"><img src="assets/img/all/editar.png" alt="Editar" class="addproducto__acciones-img"></a>
+                <a href="" class="addproducto__acciones-enlace-eliminar"><img src="assets/img/all/eliminar.png" alt="Eliminar" class="addproducto__acciones-img"></a>
+            </div>
+        </div>
+    </template>
+    <script src="assets/modulos/validacion-rodapie.js"></script>
+    <script src="assets/modulos/productos.js" type="module"></script>
+
+</body>
+</html>

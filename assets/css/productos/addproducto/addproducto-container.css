@@ -1,0 +1,22 @@
+.addproducto__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .addproducto__container{
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .addproducto__container{
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}

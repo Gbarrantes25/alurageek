@@ -1,0 +1,9 @@
+.cabecera__texto{
+    width: 126px;
+}
+
+@media (min-width: 0) and (max-width: 991px) {
+    .cabecera__texto{
+        width: 71.6px;;
+    }
+}

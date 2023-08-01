@@ -1,0 +1,13 @@
+.cabecera__buscador-icono{
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (min-width: 0) and (max-width: 499px) {
+    .cabecera__buscador-icono{
+        width: 18px;
+        height: 18px;
+    }
+}
+

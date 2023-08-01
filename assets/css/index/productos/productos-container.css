@@ -1,0 +1,34 @@
+.productos__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.productos__container--busqueda{
+    padding-bottom: 4rem;
+    display: none;
+    justify-content: space-between;
+}
+
+.productos__container--starwars{
+    padding-bottom: 4rem;
+}
+
+.productos__container--consolas{
+    padding-bottom: 4rem;
+}
+
+.productos__container--diversos{
+    padding-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .productos__container--starwars{
+        padding-bottom: 2rem;
+    }
+    
+    .productos__container--consolas{
+        padding-bottom: 2rem;
+    }
+}

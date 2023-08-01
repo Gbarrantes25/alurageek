@@ -1,0 +1,114 @@
+.addproducto__articulo{
+    width: 14.96%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addproducto__articulo-hidden{
+    display: none;
+}
+
+.addproducto__mensajeErrorBusqueda{
+    display: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.2rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.addproducto__articulo-img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.addproducto__articulo-img:hover{
+    transform: scale(1.05);
+}
+
+
+
+.addproducto__texto-nombre, .addproducto__texto-codigo{
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.addproducto__texto-precio{
+    color: var(--color-texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.addproducto__acciones{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.addproducto__acciones-img{
+    width: 20px;
+    transition: .5s;
+}
+
+.addproducto__acciones-img:active{
+    transform: scale(1.1);
+}
+
+.addproducto__texto-enlace{
+    font-weight: bold;
+    color: var(--color-azul);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .addproducto__articulo{
+        min-width: 23.296%;
+        height: 250px;
+    }
+
+    .addproducto__articulo-img{
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .addproducto__articulo{
+        min-width: 46%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .addproducto__articulo-img{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .addproducto__texto-nombre, .addproducto__texto-codigo{
+        color: var(--color-texto);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .addproducto__texto-precio{
+        color: var(--color-texto);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

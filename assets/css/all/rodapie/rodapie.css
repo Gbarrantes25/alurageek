@@ -1,0 +1,22 @@
+#rodapie{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10.55%;
+    background-color: var(--color-celeste);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #rodapie{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #rodapie{
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

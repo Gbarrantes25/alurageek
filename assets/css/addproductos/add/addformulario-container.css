@@ -1,0 +1,91 @@
+.addformulario__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 559px;
+    gap: 1rem;
+}
+
+.addformulario__titulo{
+    color: var(--color-texto);
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.addformulario__input, .addformulario__descripcion{
+    outline: none;
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-texto);
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+.addformulario__descripcion{
+    resize: none;
+    height: 3rem;
+}
+
+.addformulario__btn-agregar{
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1rem;
+}
+
+.addformulario__btn-agregar:active{
+    background-color: rgba(75, 123, 255, 0.8);
+}
+
+.addformulario__error{
+    font-size: 1rem;
+    color: red;
+    font-weight: 500;
+    text-align: center;
+}
+
+.addformulario__respuesta{
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: var(--color-azul);
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    .addformulario__container{
+        width: 704px;
+    }
+
+    .addformulario__titulo{
+        font-size: 1.375rem;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .addformulario__container{
+        width: 100%;
+    }
+    
+    .addformulario__titulo{
+        font-size: 1.375rem;
+    }
+
+    .addformulario__error{
+        font-size: 0.75rem;
+        color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+}
